@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>IT Company Website Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="IT Company Website Template">
+    <meta name="description" content="IT Company Website Template">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
+
+    <!-- Libraries CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/aos/aos.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Nav Start -->
+   <div id="nav">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo4.png" alt="Logo"  class="navbar-icon">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link active">About</a>
+                    
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <a href="software_developer.html" class="dropdown-item">SoftwareDevelopment</a>
+                            <a href="internetOfThing.html"  class="dropdown-item">Internet Of Thing</a>
+                            <a href="server-solution.html"class="dropdown-item">Server Solution</a>
+                            <a href="storage-solution.html" class="dropdown-item">Storage  Solution</a>
+                            <a href="network-security.html" class="dropdown-item">Network Security</a>
+                        </div>
+                    </div>
+                    <a href="teamm.html" class="nav-item nav-link">Team</a>
+                    <a href="vacancy.html" class="nav-item nav-link">Vacancy</a>
+                    <a href="collaboration.html" class="nav-item nav-link">Collaboration</a>
+                   <!-- <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu">
+                            <a href="software_developer.html" class="dropdown-item">Software Development</a>
+                            <a href="internetOfThing.html" class="dropdown-item">   Internet Of Thing</a>
+                            <a href="server-solution.html" class="dropdown-item">   Server Solution</a>
+                            <a href="storage-solution.html" class="dropdown-item">Storage  Solution</a>
+                            <a href="client.html" class="dropdown-item">Clients</a>
+                            <a href="single.html" class="dropdown-item">Single Page</a>
+                        </div>
+                    </div>-->
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Nav End -->
+
+    <!-- Vacancy Section Start -->
+    <div class="container mt-5">
+        <div class="section-header mb-4" data-aos="fade-up">
+            <h2>Current Job Openings</h2>
+            <p>We are looking for talented individuals to join our team.</p>
+        </div>
+        
+        <!-- Conditional Content based on Vacancy Availability -->
+        <div id="vacancy-listing" data-aos="fade-up">
+            <!-- If there are vacancies -->
+            <div id="vacancies-available">
+                <div class="vacancy-listing">
+                    <h3>Software Developer</h3>
+                    <p><strong>Location:</strong> Windhoek, Namibia</p>
+                    <p><strong>Job Type:</strong> Full-time</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Develop and maintain web applications.</li>
+                        <li>Collaborate with cross-functional teams to define, design, and ship new features.</li>
+                        <li>Ensure the performance, quality, and responsiveness of applications.</li>
+                        <li>Identify and correct bottlenecks and fix bugs.</li>
+                    </ul>
+                    <p><strong>Requirements:</strong></p>
+                    <ul>
+                        <li>Bachelor’s degree in Computer Science or related field.</li>
+                        <li>Proven experience as a Software Developer or similar role.</li>
+                        <li>Familiarity with Agile development methodologies.</li>
+                        <li>Knowledge of coding languages (e.g., Java, JavaScript) and frameworks/systems (e.g., AngularJS, Git).</li>
+                        <li>Excellent communication skills.</li>
+                    </ul>
+                </div>
+
+                <!-- Application Form Start -->
+                <div class="application-form mt-5">
+                    <h3>Apply Now</h3>
+                    <form action="submit_application.php" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="resume">Upload Resume</label>
+                            <input type="file" class="form-control-file" id="resume" name="resume" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                </div>
+                <!-- Application Form End -->
+            </div>
+
+            <!-- If there are no vacancies -->
+            <div id="no-vacancies-available" style="display: none;">
+                <p>Currently, there are no job openings available. Please check back later.</p>
+            </div>
+        </div>
+        <!-- Conditional Content End -->
+
+    </div>
+    <!-- Vacancy Section End -->
+
+    <!-- Footer Start -->
+  <div class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">About us</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Our services</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                 <!--
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Lorem ipsum</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Pellentesque</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Suspendisse egestas</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Nulla tristique</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Phasellus leo</a></li>
+                    </ul>
+                </div>
+                -->
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                        David Complex<br>
+                        Okongo,Main Round<br>
+                        Namibia <br>
+                        <strong>Phone:</strong> +264 81 870 6257<br>
+                        <strong>Email:</strong> inf@intellectualtechnogy.com<br>
+                    </p>
+
+                    <div class="social-links">
+                        <a href=""><i class="ion-logo-twitter"></i></a>
+                        <a href=""><i class="ion-logo-facebook"></i></a>
+                        <a href=""><i class="ion-logo-linkedin"></i></a>
+                        <a href=""><i class="ion-logo-instagram"></i></a>
+                        <a href=""><i class="ion-logo-youtube"></i></a>
+                    </div>
+
+                </div>
+                <!--
+                <div class="col-lg-3 col-md-6 footer-newsletter">
+                    <h4>Subscription</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                    <form action="" method="post">
+                        <input type="email" name="email"><input type="submit"  value="Subscribe">
+                    </form>
+                </div>
+                -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 copyright">
+                Copyright &copy; 2024 <a href="/">Intellectualtechnology</a>. All Rights Reserved
+            </div>
+            <div class="col-md-6 credit">
+
+                Designed by <a href=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- Libraries JS -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/aos/aos.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+
+        // Example script to toggle visibility based on vacancy availability
+        // Replace this with your backend logic to check vacancy status
+        // Example: You can use JavaScript, PHP, or any backend language to toggle visibility
+
+        // Assuming a variable or condition determines if vacancies are available
+        var vacanciesAvailable = true; // Change this based on your vacancy status
+
+        if (!vacanciesAvailable) {
+            document.getElementById('vacancies-available').style.display = 'none';
+            document.getElementById('no-vacancies-available').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
